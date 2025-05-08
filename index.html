@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vallabha's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background: #444;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: #0077cc;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 3em;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #fff;
+      color: #0077cc;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #e0e0e0;
+    }
+    .projects .card {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-left: 5px solid #0077cc;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skills span {
+      background: #ddd;
+      padding: 5px 10px;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Vallabha Sai Surishetty</h1>
+  <p>Developer | Student | Tech Explorer</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#resume">Resume</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+  <h1>Hello, I'm Vallabha 👋</h1>
+  <p>I build web apps and love solving problems with code.</p>
+  <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hey! I'm a Computer Science student from CVR College of Engineering with a deep interest in full-stack development and AI. I've worked on smart waste systems, recipe platforms, and more. Always learning, always building.</p>
+  <h3>Skills</h3>
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Python</span>
+    <span>Java</span>
+    <span>SQL</span>
+    <span>Firebase</span>
+    <span>Django</span>
+    <span>React</span>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <h2>Projects</h2>
+  <div class="card">
+    <h3>TasteTrove Recipe App</h3>
+    <p>Firebase-auth recipe platform with filters, profiles, and dark mode.</p>
+    <a href="https://github.com/vallabhatech/Tastetrove" class="btn" target="_blank">GitHub</a>
+  </div>
+  <div class="card">
+    <h3>Hangman Game (Tkinter)</h3>
+    <p>Python GUI game with categories, levels, and image rendering.</p>
+    <a href="https://github.com/vallabhatech/Hangman" class="btn" target="_blank">GitHub</a>
+  </div>
+</section>
+
+<section id="resume">
+  <h2>Resume</h2>
+  <p>Want the full breakdown of my academics, skills, and experiences?</p>
+  <a href="vallabha_resume.pdf" class="btn" download>Download Resume</a>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Got an opportunity or idea? Let's chat!</p>
+  <form onsubmit="openMail(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button class="btn" type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Vallabha | <a href="mailto:vallabha1243@gmail.com" style="color:#ccc;">Email Me</a></p>
+</footer>
+
+<script>
+  function openMail(event) {
+    event.preventDefault();
+    window.location.href = "mailto:vallabha1243@gmail.com?subject=Portfolio%20Contact&body=Hi%20Vallabha%2C%0AI%20saw%20your%20portfolio%20and...";
+  }
+</script>
+
+</body>
+</html>
