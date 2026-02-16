@@ -269,7 +269,7 @@ const Contact = () => {
                 },
                 {
                   icon: <AiFillLinkedin />,
-                  href: "https://linkedin.com/in/vallabha-tech",
+                  href: "https://www.linkedin.com/in/vallabha-tech/",
                   label: "LinkedIn",
                   color: "from-blue-500/80 to-blue-700/80",
                 },

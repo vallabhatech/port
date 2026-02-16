@@ -555,13 +555,13 @@ const LinksPage = () => {
               label="GitHub"
             />
             <IconButton
-              href="https://leetcode.com/vallabhatech/"
+              href="https://leetcode.com/u/vallabhatech/"
               icon={SiLeetcode}
               color="text-amber-400/90"
               label="LeetCode"
             />
             <IconButton
-              href="https://linkedin.com/in/vallabhatech"
+              href="https://www.linkedin.com/in/vallabha-tech/"
               icon={FaLinkedin}
               color="text-sky-400/90"
               label="LinkedIn"
@@ -594,7 +594,7 @@ const LinksPage = () => {
               icon={() => <span>📝</span>}
             />
             <CustomButton
-              href="https://linkedin.com/in/vallabhatech"
+              href="https://www.linkedin.com/in/vallabha-tech/"
               label="Connect with me on LinkedIn"
               icon={() => <FaLinkedin />}
             />

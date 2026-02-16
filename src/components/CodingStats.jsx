@@ -56,7 +56,7 @@ const GithubStat = ({ icon, value, color }) => (
 );
 
 const CodingStats = () => {
-  const leetcodeUsername = "hari577";
+  const leetcodeUsername = "vallabhatech";
   const githubUsername = "vallabhatech";
   const [githubStats, setGithubStats] = useState({
     repos: "...",
@@ -318,7 +318,7 @@ const CodingStats = () => {
 
                 <div className="mt-8 flex justify-center">
                   <ViewProfileButton
-                    href={`https://leetcode.com/${leetcodeUsername}`}
+                    href={`https://leetcode.com/u/${leetcodeUsername}`}
                     icon={<HiCode className="text-white" />}
                     label="View LeetCode Profile"
                   />

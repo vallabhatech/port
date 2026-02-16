@@ -100,7 +100,7 @@ const Hero = () => {
                   <FaGithub className="w-6 h-6 text-white group-hover:text-purple-500 transition-colors" />
                 </motion.a>
                 <motion.a
-                  href="https://www.linkedin.com/in/vallabhatech/" // Replace with your LinkedIn URL
+                  href="https://www.linkedin.com/in/vallabha-tech/" // Replace with your LinkedIn URL
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 border border-purple-600 rounded-lg hover:bg-purple-600/10 transition-all group"
