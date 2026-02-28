@@ -5,11 +5,6 @@ import { FiGithub } from 'react-icons/fi';
 import { Particles } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import caresync from "../assets/CareSync.png"
-/*import pathgenie from "../assets/pathgenie.png"
-import finwise from "../assets/finwise.png"
-import portdev from "../assets/portdev.png"
-import intellica from "../assets/intellica.png"
-import effisense from "../assets/effisense.png" */
 
 const projects = [
     {
@@ -22,47 +17,7 @@ const projects = [
         github:"https://github.com/vallabhatech/CareSync",
       },
     },
-   /* {
-      img: pathgenie,
-      title: "Pathgenie",
-      description: "AI powered career guidance platform for personalized career recommendations.",
-      technologies: ["React", "Gemini", "Appwrite", "TailwindCSS", "Groq", "Llama 3.3"],
-      links: {
-        site: "https://pathgenie.ayush-sharma.in/",
-        github:"https://github.com/glucon-d/pathgenie",
-      },
-    },
-    {
-      img: intellica,
-      title: "Intellica",
-      description: "AI powered learning platform for personalized learning experience.",
-      technologies: ["React", "Gemini", "Appwrite", "TailwindCSS"],
-      links: {
-        site: "https://intellica.ayush-sharma.in/",
-        github:"https://github.com/cyberboyayush/intellica",
-      },
-    },
-    {
-      img: portdev,
-      title: "PortDev",
-      description: "Create Devloper Portfolio in Minutes.",
-      technologies: ["React", "Firebase", "TailwindCSS", "Framer Motion"],
-      links: {
-        site: "https://portdevv.vercel.app/",
-        github:"https://github.com/cyberboyayush/portdev",
-      },
-    },
-    {
-      img: react_portfolio,
-      title: "React Portfolio",
-      description: "Personal Portfolio Website using React Js",
-      technologies: ["React", "TailwindCSS", "Framer Motion", "Particles.js"],
-      links: {
-        site: "https://cyberboyayush.in/",
-        github: "https://github.com/cyberboyayush/React-Portfolio",
-      },
-    },*/
-  ]
+]
 
 const ProjectButton = ({ href, icon, label, primary = true }) => (
   <motion.a
@@ -271,40 +226,33 @@ const Portfolio = () => {
   const particlesConfig = {
     particles: {
       number: {
-        value: 50,
+        value: 25,
         density: {
           enable: true,
-          value_area: 800
+          value_area: 1000
         }
       },
       color: { value: "#9333ea" },
       links: {
-        enable: true,
-        color: "#9333ea",
-        opacity: 0.1,
-        width: 1,
-        distance: 150
+        enable: false,
       },
       move: {
         enable: true,
-        speed: 0.8,
+        speed: 0.5,
         direction: "none",
         random: true,
         straight: false,
         out_mode: "out"
       },
       opacity: {
-        value: 0.3,
+        value: 0.2,
         random: true,
         anim: {
-          enable: true,
-          speed: 0.5,
-          opacity_min: 0.1,
-          sync: false
+          enable: false
         }
       },
       size: {
-        value: 2,
+        value: 1.5,
         random: true
       }
     },
@@ -312,16 +260,17 @@ const Portfolio = () => {
       detect_on: "canvas",
       events: {
         onhover: {
-          enable: true,
-          mode: "repulse"
-        }
-      },
-      modes: {
-        repulse: {
-          distance: 100,
-          duration: 0.4
-        }
+          enable: false
+        },
+        onclick: {
+          enable: false
+        },
+        resize: true
       }
+    },
+    retina_detect: true,
+    background: {
+      color: "transparent",
     }
   };
 

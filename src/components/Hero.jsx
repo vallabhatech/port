@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { FaGithub, FaLinkedin, FaReact, FaNodeJs } from 'react-icons/fa';
-import { DiJavascript, DiMongodb } from 'react-icons/di';
-import { SiTypescript, SiNextdotjs, SiTailwindcss, SiFirebase } from 'react-icons/si';
+import { DiJavascript } from 'react-icons/di';
+import { SiTypescript, SiTailwindcss } from 'react-icons/si';
 
 const FloatingIcon = ({ Icon, className, animate }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -175,12 +175,15 @@ const Hero = () => {
           animate={{ y: [0, -50, 0], rotate: [0, 15, 0] }}
         />
         <FloatingIcon 
-          Icon={SiNextdotjs} 
+          Icon={SiTypescript} 
           className="top-[35%] left-[25%]"
-          animate={{ y: [-25, 25], rotate: [0, 360] }}
+          animate={{ 
+            y: [-25, 25], 
+            rotate: [0, 360]
+          }}
         />
         <FloatingIcon 
-          Icon={SiTypescript} 
+          Icon={FaNodeJs} 
           className="bottom-[35%] right-[30%]"
           animate={{ 
             y: [0, -25, 0],
@@ -189,32 +192,9 @@ const Hero = () => {
           }}
         />
         <FloatingIcon 
-          Icon={FaNodeJs} 
-          className="top-[40%] right-[20%]"
-          animate={{ 
-            y: [0, -40, 0], 
-            x: [0, 20, 0],
-            rotate: [0, -15, 0] 
-          }}
-        />
-        <FloatingIcon 
-          Icon={DiMongodb} 
-          className="bottom-[25%] left-[30%]"
-          animate={{ 
-            y: [0, 30, 0],
-            scale: [1, 1.2, 1],
-            rotate: [0, 10, 0] 
-          }}
-        />
-        <FloatingIcon 
           Icon={SiTailwindcss} 
           className="top-[25%] left-[15%]"
           animate={{ y: [-30, 30], rotate: [-20, 20] }}
-        />
-        <FloatingIcon 
-          Icon={SiFirebase} 
-          className="bottom-[30%] right-[15%]"
-          animate={{ scale: [1, 1.3, 1], rotate: [0, -360] }}
         />
       </div>
 
